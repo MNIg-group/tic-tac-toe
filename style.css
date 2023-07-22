@@ -11,6 +11,7 @@
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    position: relative;
 }
 
 h1 {
@@ -76,14 +77,8 @@ h1 {
     width: 100px;
     height: 100px;
     cursor: pointer;
-    background-color: transparent;
     border-radius: 10px;
     border: none;
-}
-
-.board button>p {
-    font-size: medium;
-    font-weight: 800;
 }
 
 .btn-p {
@@ -93,4 +88,29 @@ h1 {
     height: 100%;
     display: grid;
     align-items: center;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: 1px solid rgb(90, 90, 7);
+    width: 60%;
+    height: 60%;
+    top: 10%;
+    border-radius: 20px;
+}
+
+#info .message {
+    background-color: transparent;
+    font-weight: 800;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.not-shown {
+    visibility: hidden;
 }
